@@ -16,7 +16,7 @@ export default function App() {
 
 
   function setEnlisted(enlistedBill) {
-    // console.log(`set bill ${enlistedBill} to enlisted`)
+    
 
     let updatedBill = { ...enlistedBill, enlisted: true }
 
@@ -33,7 +33,7 @@ export default function App() {
   }
 
   function setDelisted(DelistedBill) {
-    // console.log(`set bill ${DelistedBill} to enlisted`)
+    
 
     let updatedBill = { ...DelistedBill, enlisted: false }
 
@@ -52,7 +52,7 @@ export default function App() {
   const myBills = allBills.filter((bill) => bill.enlisted)
 
   function fireBill(billToFire) {
-    //console.log(`set bill ${billToFire} to Fired`);
+    
     setAllBills(allBills.filter(bill => bill.id !== billToFire));
   }
 
