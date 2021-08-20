@@ -1,21 +1,13 @@
-import React, { Component } from 'react';
-import BillCard from './BillCard.js';
+import React from 'react';
 
-export default class BillCollection extends Component {
-  render() {
-    return (
-      <div className="ui four column grid">
-        <div className="row">
-          {this.props.bills.map((bill) => (
-            <BillCard
-              key={bill.id}
-              bill={bill}
-              handleClick={this.props.handleClick}
-              handleFire={this.props.handleFire}
-            />
-          ))}
-        </div>
+export default function BillCollection() {
+  // Your code here
+
+  return (
+    <div className="ui four column grid">
+      <div className="row">
+        {/*...and here..*/}
       </div>
-    );
-  }
+    </div>
+  );
 }

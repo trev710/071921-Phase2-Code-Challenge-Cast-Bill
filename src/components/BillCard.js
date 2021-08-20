@@ -1,11 +1,15 @@
 import React from 'react';
 
-const BillCard = ({ bill, handleClick, handleFire }) => {
+const BillCard = ({ bill }) => {
   return (
     <div className="ui column">
-      <div className="ui card" key={bill.id} onClick={() => handleClick(bill)}>
+      <div
+        className="ui card"
+        key={bill.id}
+        onClick={() => console.log('add code to connect event listener')}
+      >
         <div className="image">
-          <img alt={"this bill"} src={bill.photo} />
+          <img alt={bill.name} src={bill.photo} />
         </div>
         <div className="content">
           <div className="header">{bill.name}</div>
@@ -30,10 +34,9 @@ const BillCard = ({ bill, handleClick, handleFire }) => {
             <div className="ui center aligned segment basic">
               <button
                 className="ui mini blue button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleFire(bill);
-                }}
+                onClick={() =>
+                  console.log('add code to connect event listener')
+                }
               >
                 FIRE
               </button>
